@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleafe.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Example of Loop</title>
+</head>
+<body>
+<h1>Going to Traverse elements in Collection..</h1>
+<h1 th:text="${names}"></h1>
+<ul>
+<li th:each="n,status: ${names}">
+<span th:text="${status.index}+ ' ' +${n}"></span>
+</li>
+</ul>
+</body>
+</html>

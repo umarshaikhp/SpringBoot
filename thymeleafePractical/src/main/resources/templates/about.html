@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleafe.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>About LearnCodeWith umar</h1>
+<h1>We are learning spring Boot</h1>
+
+<h1 th:text="${name}"></h1>
+<!-- for using object property we use # for example touppercase() method  -->
+<h1 th:text="${currentDate}"></h1>
+<h1 th:text="${ #strings.toUpperCase(name) }"></h1>
+
+<!-- declaring variable in thymeleafe  -->
+<div th:with="a=5,n=${name}">
+<!-- printing vriable value in span tag like that -->
+<h1> Value of n is <span th:text="${n}"></span></h1>
+</div>
+
+
+</body>
+</html>

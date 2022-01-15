@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Conditional Statement in Thymeleafe</title>
+</head>
+<body>
+<h1>Conditional Statement in Thymeleafe</h1>
+<!-- belowe we use Elvis for conditional base rendering  -->
+<h1>User is <span th:style="${isActive} ? 'color:green' : 'color:red' " th:text="${isActive} ? 'Active' : 'Not Active'"></span></h1>
+<h1 th:if="${gender}=='M'">Male</h1>
+<h1 th:unless="${gender}=='M'">Female</h1>
+
+
+
+<!-- switch case statement in thymeleafe   -->
+<div th:switch="${#lists.size(myList)}">
+<h1 th:case="'0'">List contains zero element</h1>
+<h1 th:case="'1'">List contains one element</h1>
+<h1 th:case="'*'">List contains more than one element</h1>
+</div>
+
+
+
+
+</body>
+</html>

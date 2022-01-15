@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleafe.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Services Pages</title>
+</head>
+<body>
+<h1>This are the Services Provided By Me</h1>
+<!--Going to bring footer here  -->
+<!--passing dynamic value in footer fragment(piece of code)  -->
+<footer id="hostTag" th:replace="footer::footer1(${title},${subtitle})">
+
+</footer>
+
+</body>
+</html>
